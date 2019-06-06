@@ -6,33 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train scheduler</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css">
 </head>
 <body>
 <div class="container">
 <!-- Content here -->
+<!--header-->
         <div class="row">
             <div class="col col-lg-12 text-center jumbotron">
-              Train Scheduler Cho Cho 
+              <span>Train Scheduler</span>
             </div>
         </div>
+<!--End of header-->
 
-        <div class="row border">
-                <div class="col col-lg-12">
-                  <span> Current Train Schedule </span>
-                </div>
+  <div class="row border">
+        <div class="col-md-12">
+            <!-- top of table  -->
+            <div class="card mb-4">
+                <div class="card-header">Add Train</div>
+                <div class="card-body"></div>
+            </div>
         </div>
-        
-<div class="row"> <!--table div-->
-        <table class="table table-striped border">
-                <thead>
-                  <tr>
-                    <th scope="col">Train Name</th>
-                    <th scope="col">Destination</th>
-                    <th scope="col">Frequency</th>
-                    <th scope="col">Next Arrival</th>
-                    <th scope="col">Minutes Away</th>
-                  </tr>
-                </thead>
+    </div>
+
+
+<div class="row"> 
+    <!--table div-->
+    <table class="table table-striped border">
+        <thead>
+            <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+            </tr>
+        </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
@@ -61,26 +70,47 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                </tr>
+                  </tr>
                 </tbody>
-              </table>
+    </table>
 </div>
-    <div class="row border">
-        <div class="col col-lg-12">
-          <span> Add Train </span>
+    
+<div class="row">
+        <div class="col-md-12">
+          <!-- top of form  -->
+          <div class="card mb-4">
+            <div class="card-header">Add Train</div>
+            <div class="card-body">
+              <!-- Entry Form -->
+              <form>
+                <div class="form-group">
+                  <label for="Train-name-input">Train Name</label>
+                  <input class="form-control" id="Train-name-input" placeholder="Jane Doe" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="Destination-input">Destination</label>
+                  <input class="form-control" id="Destination-input" placeholder="CEO" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="Time-input">First Train Time</label>
+                  <input class="form-control" id="Time-input" placeholder="01/08/1989" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="rate-input">Frequency</label>
+                  <input class="form-control" id="rate-input" placeholder="200000" type="text">
+                </div>
+                <button class="btn btn-primary" id="add-train-btn">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>  
+    
+</div>  <!--Closing container -->
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</div>
-    
+<!--Scripts-->
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="Assets/script.js"></script>
+
 </body>
 </html>
