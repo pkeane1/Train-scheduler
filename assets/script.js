@@ -40,5 +40,12 @@ $("#add-train-btn").on("click",function(event){
 
 
 })
+database.ref().on("child_added", function(childSnapshot) {
+
+name = childSnapshot.val().name;
+destination = childSnapshot.val().destination;
+trainTime = childSnapshot.val().time;
+freq = childSnapshot.val().frequency;
 
 
+});
